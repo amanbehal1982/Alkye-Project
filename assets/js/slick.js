@@ -2276,12 +2276,17 @@
             if (_.currentSlide === 0) {
                 _.$prevArrow.addClass('slick-disabled');
                 _.$nextArrow.removeClass('slick-disabled');
+            } else if ((_.currentSlide) === _.slideCount - 1) {
+                $('.submit').addClass('slick-enabled');
+                _.$nextArrow.addClass('slick-disabled');
             } else if (_.currentSlide >= _.slideCount - _.options.slidesToShow && _.options.centerMode === false) {
                 _.$nextArrow.addClass('slick-disabled');
-                _.$prevArrow.removeClass('slick-disabled');
+                _.$prevArrow.removeClass('slick-disabled');  
+                $('.submit').addClass('slick-disabled');      
             } else if (_.currentSlide >= _.slideCount - 1 && _.options.centerMode === true) {
                 _.$nextArrow.addClass('slick-disabled');
                 _.$prevArrow.removeClass('slick-disabled');
+                $('.submit').addClass('slick-disabled'); 
             }
         }
 
