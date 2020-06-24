@@ -29,6 +29,17 @@ header h1{
     letter-spacing:-2px;
     line-height:70px;
     margin-bottom:40px;
+    position: relative;
+}
+header h1:after{
+    content:'';
+    background: url(../images/top-back-img.jpg) no-repeat right top;
+    width: 69px;
+    height: 102px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 0;
 }
 header p{
     font-size:30px;
@@ -36,6 +47,8 @@ header p{
     line-height:30px;
     width:60%;
     margin-bottom:0;
+    position: relative;
+    z-index: 11;
 }
 .slider-outer{
     position: relative;
@@ -51,12 +64,14 @@ header p{
     letter-spacing:-1.14px;
     line-height:56px;
     margin-bottom:0;
+    padding-right:100px;
 }
 p.sub-heading{
     font-size:30px;
     margin-bottom:0;
     line-height: normal;
     color:#6c6c6c;
+    padding-right:100px;
 }
 .form-check{
     position: relative;
@@ -337,7 +352,8 @@ p.sub-heading{
     background: #F2F2F2;
     padding:30px 35px;
 }
-.summary-box h2{
+.slide-part .summary-box h2,
+.result-area .summary-box h2{
     font-family: 'Chronicle Display Semi';
     font-weight: 600;
     font-size:24px;
@@ -345,6 +361,7 @@ p.sub-heading{
     letter-spacing: normal;
     line-height: 1.2;
     margin-bottom: 1rem;
+    padding-right:0;
 }
 .summary-box  .summary-list{    
     padding-top:1rem;
@@ -365,15 +382,272 @@ p.sub-heading{
     top: 3px;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
 footer{
     background: #000;
     height: 200px;
+}
+
+
+@media (max-width: 1199.98px){
+    header h1{
+        font-size: 65px;
+        line-height: 1;
+        letter-spacing: normal;
+    }
+    header p{
+        width:70%;
+    }
+
+    .first-slide h3{
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    .first-slide p{
+        font-size: 16px;
+    }
+    .slide-part h2, .result-area h2{
+        font-size: 35px;
+        letter-spacing: normal;
+    }
+    p.sub-heading{
+        font-size:25px;
+    }
+    .contact-team-row p.contact-note{
+        font-size:20px;        
+    }
+    .contact-team-row .card-box .card-content h5{
+        font-size:20px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    header h1{
+        font-size: 55px;
+    }
+    header p{
+        width:100%;
+        font-size: 25px;
+    }
+    .slide-part h2, .result-area h2{
+        font-size: 27px;
+    }
+    p.sub-heading{
+        font-size: 20px;
+    }
+    .slick-dots li{
+        font-size:40px;
+    }
+    .slick-dots li.slick-active a, .slick-dots li.slick-active a:hover{
+        font-size: 50px;
+    }
+
+    .summary-box{
+        padding:25px;
+    }
+
+    .slick-arrow{
+        font-size:20px;
+        line-height: 40px;
+    }
+    .slick-arrow span{
+        width:40px;
+        height:40px;
+        line-height: 40px;
+    }
+
+    .result-box{
+        padding:60px 40px;
+    }
+    .result-box p{
+        font-size: 40px;
+    }
+    .result-form{
+        margin-top:40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    header h1{
+        font-size:40px;
+        margin-bottom:20px;
+    }
+    header h1:after{
+        top:0;
+    }
+    header p{
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    header{
+        padding:60px 0;
+    }
+    .first-slide h3{
+        font-size:20px;
+    }
+    .first-slide p{
+        font-size:13px;
+        line-height: 1.8;
+    }
+    .slide-part h2, .result-area h2{
+        font-size:22px;
+        line-height: 1.2;
+        margin-bottom:5px;
+    }
+    p.sub-heading{
+        font-size: 18px;
+    }
+    .form-group-area h5{
+        font-size: 16px;
+    }
+    .form-check .form-check-label{
+        font-size:15px;
+    }
+    .contact-team-row{
+        margin-left:-15px;
+        margin-right:-15px;
+    }
+    .result-box p{
+        font-size: 35px;
+    }
+    .result-box p span{
+        font-size: 16px;
+    }
+    .result-box p sup{
+        top:-3px;
+        font-size: 22px;
+    }
+    .result-form .form-control{
+        font-size: 16px;
+    }
+    .submit-button{
+        font-size: 18px;
+    }
+    .contact-team-area{
+        padding-bottom:0;
+        padding-top:40px;
+    }
+    .summary-box{
+        padding:20px;
+        margin-top:40px;
+    }
+    .summary-box ul.summary-list{
+       display:none;
+    }
+    .summary-box ul.summary-list:nth-of-type(1){
+        margin-top:1rem;
+    }
+    .slide-part .summary-box h2, .result-area .summary-box h2{
+        margin-bottom: 0;
+        position: relative;
+        cursor: pointer;
+    }
+    .slide-part .summary-box h2:after, .result-area .summary-box h2:after{
+        content:'';
+        background: url(../images/up-small-arrow.png) no-repeat right center;
+        width:24px;
+        height:14px;
+        float:right;
+        margin-top:8px;
+    }
+    .slide-part .summary-box h2.active-box:after, .result-area .summary-box h2.active-box:after{
+        background: url(../images/down-small-arrow.png) no-repeat right center;
+    }
+    footer{
+        height:40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    header h1{
+        font-size:28px;
+        margin-bottom:20px;
+    }
+    header p{
+        font-size: 14px;
+    }
+    .slide-part{
+        padding-top:40px;
+    }
+    .result-area{
+        padding-top:40px;
+    }
+    .slide-part h2, .result-area h2{
+        font-size:20px;
+        padding-right:65px;
+    }
+    p.sub-heading{
+        font-size:14px;
+        padding-right:65px;
+    }
+    .first-slide .form-check{
+        margin-top:35px;
+    }
+    .slick-dots li{
+        font-size: 35px;
+    }
+    .slick-dots li.slick-active a, .slick-dots li.slick-active a:hover{
+        font-size: 45px;
+    }
+    .form-group-area h5{
+        font-size:15px;
+    }
+    .form-check .form-check-label{
+        font-size: 14px;
+    }
+    .form-group-area .form-group .form-check{
+        margin-top:10px;
+    }
+    .slick-arrow{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .slick-arrow span {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .form-group-area .form-group.input-field .form-control{
+        max-width:320px;
+        font-size: 14px;
+    }
+    .result-box{
+        padding:35px;
+    }
+    .result-box p{
+        font-size: 22px;
+    }
+    .result-box h4{
+        font-size:18px;
+    }
+    .result-box p span{
+        font-size: 15px;
+    }
+    .result-box p sup{
+        font-size: 20px;
+    }
+    .result-box .monthly-cost{
+        margin-top:40px;
+    }
+    .contact-team-row p.contact-note{
+        font-size: 16px;
+    }
+    .contact-team-row .card-box{
+        min-height: 60px;
+    }
+    .contact-team-row .card-box .card-img{
+        width:60px;
+        height:60px;
+    }
+    .contact-team-row .card-box .card-content{
+        padding-left:70px;
+    }
+    .contact-team-row .card-box .card-content h5{
+        font-size: 16px;
+    }
+    .contact-team-row .card-box .card-content p{
+        font-size: 15px;
+    }
+    .result-form .form-control{
+        font-size: 14px;
+    }
 }

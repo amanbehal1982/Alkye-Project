@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pricing Calculator</title>
     <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="assets/css/slick.css">
     <link type="text/css" rel="stylesheet" href="assets/css/fonts.css">
     <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <link type="image/png" rel="icon" href="assets/images/fav-icon.png">
 </head>
 
 <body>
@@ -36,7 +37,7 @@
                                 <h2>Lets get started.</h2>
                                 <p class="sub-heading">What services are you interested in…</p>
                                 <div class="row first-slide">
-                                    <div class="col-md-4 form-check">
+                                    <div class="col-12 col-sm-6 col-lg-4 form-check">
                                         <input class="check-input" type="checkbox" id="1">
                                         <label for="1">
                                             <h3>Website Site Build</h3>
@@ -45,7 +46,7 @@
                                             <p>- Website development</p>
                                         </label>
                                     </div>
-                                    <div class="col-md-4 form-check">
+                                    <div class="col-12 col-sm-6 col-lg-4 form-check">
                                         <input class="check-input" type="checkbox" id="2">
                                         <label for="2">
                                             <h3>App Build</h3>
@@ -54,7 +55,7 @@
                                             <p>- Website development</p>
                                         </label>
                                     </div>
-                                    <div class="col-md-4 form-check">
+                                    <div class="col-12 col-sm-6 col-lg-4 form-check">
                                         <input class="check-input" type="checkbox" id="3">
                                         <label for="3">
                                             <h3>Branding & Marketing</h3>
@@ -63,7 +64,7 @@
                                             <p>- Website development</p>
                                         </label>
                                     </div>
-                                    <div class="col-md-4 form-check">
+                                    <div class="col-12 col-sm-6 col-lg-4 form-check">
                                         <input class="check-input" type="checkbox" id="4">
                                         <label for="4">
                                             <h3>Data & Reporting</h3>
@@ -72,7 +73,7 @@
                                             <p>- Website development</p>
                                         </label>
                                     </div>
-                                    <div class="col-md-4 form-check">
+                                    <div class="col-12 col-sm-6 col-lg-4 form-check">
                                         <input class="check-input" type="checkbox" id="5">
                                         <label for="5">
                                             <h3>Demand Generation</h3>
@@ -81,7 +82,7 @@
                                             <p>- Website development</p>
                                         </label>
                                     </div>
-                                    <div class="col-md-4 form-check">
+                                    <div class="col-12 col-sm-6 col-lg-4 form-check">
                                         <input class="check-input" type="checkbox" id="6">
                                         <label for="6">
                                             <h3>Business Strategy</h3>
@@ -101,172 +102,172 @@
                                             <div class="form-group">
                                                 <h5>What technologies are you after ( Select all that apply )?</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="ios-app"
-                                                        value="iOS App">
-                                                    <label class="form-check-label" for="ios-app">iOS App</label>
+                                                    <input class="form-check-input" type="checkbox" id="question1summary_ios-app"
+                                                        value="iOS App" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question1summary_ios-app">iOS App</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="Android-app"
-                                                        value="Android App">
-                                                    <label class="form-check-label" for="Android-app">Android App</label>
+                                                    <input class="form-check-input" type="checkbox" id="question1summary_Android-app"
+                                                        value="Android App" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question1summary_Android-app">Android App</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="website"
-                                                        value="Website">
-                                                    <label class="form-check-label" for="website">Website</label>
+                                                    <input class="form-check-input" type="checkbox" id="question1summary_website"
+                                                        value="Website" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question1summary_website">Website</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>What functionalities are you after? <span>(Select multiple)</span></h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="shop-ecomm"
-                                                        value="Shop /Ecomm">
-                                                    <label class="form-check-label" for="shop-ecomm">Shop /Ecomm</label>
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_shop-ecomm"
+                                                        value="Shop /Ecomm" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_shop-ecomm">Shop /Ecomm</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="donations"
-                                                        value="Donations">
-                                                    <label class="form-check-label" for="donations">Donations</label>
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_donations"
+                                                        value="Donations" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_donations">Donations</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="portfolio"
-                                                        value="Portfolio">
-                                                    <label class="form-check-label" for="portfolio">Portfolio</label>
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_portfolio"
+                                                        value="Portfolio" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_portfolio">Portfolio</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="health-data-integration"
-                                                        value="Health Data Integration (App only)">
-                                                    <label class="form-check-label" for="health-data-integration">Health Data
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_health-data-integration"
+                                                        value="Health Data Integration (App only)" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_health-data-integration">Health Data
                                                         Integration (App only)</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="live-chat"
-                                                        value="Live Chat">
-                                                    <label class="form-check-label" for="live-chat">Live Chat</label>
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_live-chat"
+                                                        value="Live Chat" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_live-chat">Live Chat</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="request-call-back"
-                                                        value="Request a call back">
-                                                    <label class="form-check-label" for="request-call-back">Request a call
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_request-call-back"
+                                                        value="Request a call back" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_request-call-back">Request a call
                                                         back</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="social-media"
-                                                        value="Social Media">
-                                                    <label class="form-check-label" for="social-media">Social Media</label>
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_social-media"
+                                                        value="Social Media" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_social-media">Social Media</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="geo-tracking"
-                                                        value="Geo-tracking (App only)">
-                                                    <label class="form-check-label" for="geo-tracking">Geo-tracking (App
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_geo-tracking"
+                                                        value="Geo-tracking (App only)" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_geo-tracking">Geo-tracking (App
                                                         only)</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="image-gallery"
-                                                        value="Image Gallery">
-                                                    <label class="form-check-label" for="image-gallery">Image Gallery</label>
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_image-gallery"
+                                                        value="Image Gallery" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_image-gallery">Image Gallery</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="forum" value="Forum">
-                                                    <label class="form-check-label" for="forum">Forum</label>
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_forum" value="Forum" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_forum">Forum</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="bookings"
-                                                        value="Bookings">
-                                                    <label class="form-check-label" for="bookings">Bookings</label>
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_bookings"
+                                                        value="Bookings" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_bookings">Bookings</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="push-notifications"
-                                                        value="Push notifications (App only)">
-                                                    <label class="form-check-label" for="push-notifications">Push notifications
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_push-notifications"
+                                                        value="Push notifications (App only)" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_push-notifications">Push notifications
                                                         (App only)</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="online-training"
-                                                        value="Online Training">
-                                                    <label class="form-check-label" for="online-training">Online
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_online-training"
+                                                        value="Online Training" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_online-training">Online
                                                         Training</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="event-scheduling"
-                                                        value="Event Scheduling">
-                                                    <label class="form-check-label" for="event-scheduling">Event
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_event-scheduling"
+                                                        value="Event Scheduling" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_event-scheduling">Event
                                                         Scheduling</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="video-library"
-                                                        value="Video Library">
-                                                    <label class="form-check-label" for="video-library">Video Library</label>
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_video-library"
+                                                        value="Video Library" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_video-library">Video Library</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="augmented-reality"
-                                                        value="Augmented Reality (App only)">
-                                                    <label class="form-check-label" for="augmented-reality">Augmented Reality
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_augmented-reality"
+                                                        value="Augmented Reality (App only)" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_augmented-reality">Augmented Reality
                                                         (App only)</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="web-notifications"
-                                                        value="Web notifications">
-                                                    <label class="form-check-label" for="web-notifications">Web
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_web-notifications"
+                                                        value="Web notifications" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_web-notifications">Web
                                                         notifications</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="media-publications"
-                                                        value="Media & Publications">
-                                                    <label class="form-check-label" for="media-publications">Media &
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_media-publications"
+                                                        value="Media & Publications" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_media-publications">Media &
                                                         Publications</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="simple-blog"
-                                                        value="Simple Blog">
-                                                    <label class="form-check-label" for="simple-blog">Simple Blog</label>
+                                                    <input class="form-check-input" type="checkbox" id="question2summary_simple-blog"
+                                                        value="Simple Blog" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question2summary_simple-blog">Simple Blog</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Number of pages</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="pages-number" id="0-10"
-                                                        value="0 - 10">
-                                                    <label class="form-check-label radio-box" for="0-10">0 - 10</label>
+                                                    <input class="form-check-input" type="radio" name="pages-number" id="question3summary_0-10"
+                                                        value="0 - 10" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question3summary_0-10">0 - 10</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="pages-number" id="10-25"
-                                                        value="10 - 25">
-                                                    <label class="form-check-label radio-box" for="10-25">10 - 25</label>
+                                                    <input class="form-check-input" type="radio" name="pages-number" id="question3summary_10-25"
+                                                        value="10 - 25" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question3summary_10-25">10 - 25</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="pages-number" id="25-50"
-                                                        value="25 - 50">
-                                                    <label class="form-check-label radio-box" for="25-50">25 - 50</label>
+                                                    <input class="form-check-input" type="radio" name="pages-number" id="question3summary_25-50"
+                                                        value="25 - 50" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question3summary_25-50">25 - 50</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="pages-number" id="50-100"
-                                                        value="50 - 100">
-                                                    <label class="form-check-label radio-box" for="50-100">50 - 100</label>
+                                                    <input class="form-check-input" type="radio" name="pages-number" id="question3summary_50-100"
+                                                        value="50 - 100" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question3summary_50-100">50 - 100</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="pages-number" id="100+"
-                                                        value="100+">
-                                                    <label class="form-check-label radio-box" for="100+">100+</label>
+                                                    <input class="form-check-input" type="radio" name="pages-number" id="question3summary_100+"
+                                                        value="100+" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question3summary_100+">100+</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="pages-number"
-                                                        id="i-dont-know" value="I don’t know">
-                                                    <label class="form-check-label radio-box" for="i-dont-know">I don’t
+                                                        id="question3summary_i-dont-know" value="I don’t know" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question3summary_i-dont-know">I don’t
                                                         know</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Would you require us to host your website?</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="required-host" id="yes"
-                                                        value="Yes">
-                                                    <label class="form-check-label radio-box" for="yes">Yes</label>
+                                                    <input class="form-check-input" type="radio" name="required-host" id="question4summary_yes"
+                                                        value="Yes" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question4summary_yes">Yes</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="required-host"
-                                                        id="own-hosting" value="No, I have my own hosting">
-                                                    <label class="form-check-label radio-box" for="own-hosting">No, I have my
+                                                        id="question4summary_own-hosting" value="No, I have my own hosting" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question4summary_own-hosting">No, I have my
                                                         own hosting</label>
                                                 </div>
                                             </div>
@@ -274,81 +275,81 @@
                                                 <h5>Do you have any preferred technology in mind?</h5>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="preferred-technology"
-                                                        id="alkye-recommends" value="No, what ever Alkye recommends">
-                                                    <label class="form-check-label radio-box" for="alkye-recommends">No, what
+                                                        id="question5summary_alkye-recommends" value="No, what ever Alkye recommends" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question5summary_alkye-recommends">No, what
                                                         ever Alkye recommends</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="preferred-technology"
-                                                        id="wordpress" value="WordPress">
-                                                    <label class="form-check-label radio-box" for="wordpress">WordPress</label>
+                                                        id="question5summary_wordpress" value="WordPress" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question5summary_wordpress">WordPress</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="preferred-technology"
-                                                        id="drupal" value="Drupal">
-                                                    <label class="form-check-label radio-box" for="drupal">Drupal</label>
+                                                        id="question5summary_drupal" value="Drupal" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question5summary_drupal">Drupal</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="preferred-technology"
-                                                        id="joomla" value="Joomla">
-                                                    <label class="form-check-label radio-box" for="joomla">Joomla</label>
+                                                        id="question5summary_joomla" value="Joomla" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question5summary_joomla">Joomla</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="preferred-technology"
-                                                        id="wix" value="Wix">
-                                                    <label class="form-check-label radio-box" for="wix">Wix</label>
+                                                        id="question5summary_wix" value="Wix" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question5summary_wix">Wix</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="preferred-technology"
-                                                        id="react" value="React">
-                                                    <label class="form-check-label radio-box" for="react">React</label>
+                                                        id="question5summary_react" value="React" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question5summary_react">React</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="preferred-technology"
-                                                        id="angular" value="Angular">
-                                                    <label class="form-check-label radio-box" for="angular">Angular</label>
+                                                        id="question5summary_angular" value="Angular" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question5summary_angular">Angular</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Preferred Technology (App)</h5>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="preferred-technology-app"
-                                                        id="alkye-recommends-app" value="No, what ever Alkye recommends">
-                                                    <label class="form-check-label radio-box" for="alkye-recommends-app">No,
+                                                        id="question6summary_alkye-recommends-app" value="No, what ever Alkye recommends" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question6summary_alkye-recommends-app">No,
                                                         what ever Alkye recommends</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="preferred-technology-app"
-                                                        id="skn-app" value="Swift / Kotlin - Native App">
-                                                    <label class="form-check-label radio-box" for="skn-app">Swift / Kotlin -
+                                                        id="question6summary_skn-app" value="Swift / Kotlin - Native App" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question6summary_skn-app">Swift / Kotlin -
                                                         Native App</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="preferred-technology-app"
-                                                        id="reactnative" value="Hybrid App - React Native">
-                                                    <label class="form-check-label radio-box" for="reactnative">Hybrid App -
+                                                        id="question6summary_reactnative" value="Hybrid App - React Native" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question6summary_reactnative">Hybrid App -
                                                         React Native</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="preferred-technology-app"
-                                                        id="pwa" value="PWA">
-                                                    <label class="form-check-label radio-box" for="pwa">PWA</label>
+                                                        id="question6summary_pwa" value="PWA" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question6summary_pwa">PWA</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Would you require user based personalisation (Read here)</h5>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox"
-                                                        id="user-based-personalisation" value="Yes">
-                                                    <label class="form-check-label" for="user-based-personalisation">Yes</label>
+                                                        id="question7summary_user-based-personalisation" value="Yes" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question7summary_user-based-personalisation">Yes</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Would you require enhanced Tech and Data security?</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="data-security"
-                                                        value="Yes">
-                                                    <label class="form-check-label" for="data-security">Yes</label>
+                                                    <input class="form-check-input" type="checkbox" id="question8summary_data-security"
+                                                        value="Yes" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question8summary_data-security">Yes</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -356,36 +357,14 @@
                                     <div class="col-12 col-md-4">
                                         <div class="summary-box">
                                             <h2>Summary</h2>
-                                            <ul class="summary-list">
-                                                <li>iOS App <span class="close-icon"></span></li>
-                                                <li>Android App <span class="close-icon"></span></li>
-                                                <li>Website <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>Shop /Ecomm <span class="close-icon"></span></li>
-                                                <li>Donations <span class="close-icon"></span></li>
-                                                <li>Health Data Integration (App only) <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>0 - 10 <span class="close-icon"></span></li>
-                                                <li>25 - 50 <span class="close-icon"></span></li>
-                                                <li>I don’t know <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>No, I have my own hosting <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>No, what ever Alkye recommends <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>No, what ever Alkye recommends <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>Yes <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>Yes <span class="close-icon"></span></li>
-                                            </ul>
+                                            <ul class="summary-list" id="question1summary"></ul>
+                                            <ul class="summary-list" id="question2summary"></ul>
+                                            <ul class="summary-list" id="question3summary"></ul>
+                                            <ul class="summary-list" id="question4summary"></ul>
+                                            <ul class="summary-list" id="question5summary"></ul>
+                                            <ul class="summary-list" id="question6summary"></ul>
+                                            <ul class="summary-list" id="question7summary"></ul>
+                                            <ul class="summary-list" id="question8summary"></ul>
                                         </div>
                                     </div>
                                 </div>
@@ -401,92 +380,92 @@
                                                         multiple)</span></h5>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="custom-design"
-                                                        id="custom-design" value="Custom Design">
-                                                    <label class="form-check-label radio-box" for="custom-design">Custom
+                                                        id="question9summary_custom-design" value="Custom Design" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question9summary_custom-design">Custom
                                                         Design</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="custom-design"
-                                                        id="templated" value="Templated">
-                                                    <label class="form-check-label radio-box" for="templated">Templated</label>
+                                                        id="question9summary_templated" value="Templated" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question9summary_templated">Templated</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Would you need a logo design?</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="logo-design"
-                                                        value="Yes">
-                                                    <label class="form-check-label" for="logo-design">Yes</label>
+                                                    <input class="form-check-input" type="checkbox" id="question10summary_logo-design"
+                                                        value="Yes" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question10summary_logo-design" onchange="generateSummary(this)">Yes</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Would you require email builds and how many?</h5>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="require-email-builds"
-                                                        id="value1" value="0 - 10">
-                                                    <label class="form-check-label radio-box" for="value1">0 - 10</label>
+                                                        id="question11summary_value1" value="0 - 10" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question11summary_value1">0 - 10</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="require-email-builds"
-                                                        id="value2" value="10 - 25">
-                                                    <label class="form-check-label radio-box" for="value2">10 - 25</label>
+                                                        id="question11summary_value2" value="10 - 25" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question11summary_value2">10 - 25</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="require-email-builds"
-                                                        id="value3" value="25 - 50">
-                                                    <label class="form-check-label radio-box" for="value3">25 - 50</label>
+                                                        id="question11summary_value3" value="25 - 50" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question11summary_value3">25 - 50</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="require-email-builds"
-                                                        id="value4" value="50 - 100">
-                                                    <label class="form-check-label radio-box" for="value4">50 - 100</label>
+                                                        id="question11summary_value4" value="50 - 100" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question11summary_value4">50 - 100</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="require-email-builds"
-                                                        id="value5" value="100+">
-                                                    <label class="form-check-label radio-box" for="value5">100+</label>
+                                                        id="question11summary_value5" value="100+" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question11summary_value5">100+</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="require-email-builds"
-                                                        id="value6" value="I don’t know">
-                                                    <label class="form-check-label radio-box" for="value6">I don’t know</label>
+                                                        id="question11summary_value6" value="I don’t know" onchange="generateSummary(this)">
+                                                    <label class="form-check-label radio-box" for="question11summary_value6">I don’t know</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Would you require marketing automation journeys (Read here) ?</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="call-journey"
-                                                        value="Request a call journey">
-                                                    <label class="form-check-label" for="call-journey">Request a call
+                                                    <input class="form-check-input" type="checkbox" id="question12summary_call-journey"
+                                                        value="Request a call journey" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question12summary_call-journey">Request a call
                                                         journey</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="cart-journey"
-                                                        value="Abandon cart journey">
-                                                    <label class="form-check-label" for="cart-journey">Abandon cart
+                                                    <input class="form-check-input" type="checkbox" id="question12summary_cart-journey"
+                                                        value="Abandon cart journey" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question12summary_cart-journey">Abandon cart
                                                         journey</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="on-boarding-journey"
-                                                        value="New customer on-boarding journey">
-                                                    <label class="form-check-label" for="on-boarding-journey">New customer
+                                                    <input class="form-check-input" type="checkbox" id="question12summary_on-boarding-journey"
+                                                        value="New customer on-boarding journey" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question12summary_on-boarding-journey">New customer
                                                         on-boarding journey</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Would you like the website to be fully optimised for SEO (Read here) ?</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="fully-optimised"
-                                                        value="Yes">
-                                                    <label class="form-check-label" for="fully-optimised">Yes</label>
+                                                    <input class="form-check-input" type="checkbox" id="question13summary_fully-optimised"
+                                                        value="Yes" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question13summary_fully-optimised">Yes</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Do you need any copywriting services for the website /app ?</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="copywriting-services"
-                                                        value="Yes">
-                                                    <label class="form-check-label" for="copywriting-services">Yes</label>
+                                                    <input class="form-check-input" type="checkbox" id="question14summary_copywriting-services"
+                                                        value="Yes" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question14summary_copywriting-services">Yes</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -494,27 +473,12 @@
                                     <div class="col-12 col-md-4">
                                         <div class="summary-box">
                                             <h2>Summary</h2>
-                                            <ul class="summary-list">
-                                                <li>Custom Design <span class="close-icon"></span></li>
-                                                <li>Templated <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>Yes <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>0 - 10 <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>Request a call journey <span class="close-icon"></span></li>
-                                                <li>Abandon cart journey <span class="close-icon"></span></li>
-                                                <li>New customer on-boarding journey <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>Yes <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>Yes <span class="close-icon"></span></li>
-                                            </ul>
+                                            <ul class="summary-list" id="question9summary"></ul>
+                                            <ul class="summary-list" id="question10summary"></ul>
+                                            <ul class="summary-list" id="question11summary"></ul>
+                                            <ul class="summary-list" id="question12summary"></ul>
+                                            <ul class="summary-list" id="question13summary"></ul>
+                                            <ul class="summary-list" id="question14summary"></ul>
                                         </div>
                                     </div>
                                 </div>
@@ -528,114 +492,114 @@
                                             <div class="form-group">
                                                 <h5>Would you want an ongoing social media engagement (Read here)?</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="social-media-engagement"
-                                                        value="Yes">
-                                                    <label class="form-check-label" for="social-media-engagement">Yes</label>
+                                                    <input class="form-check-input" type="checkbox" id="question15summary_social-media-engagement"
+                                                        value="Yes" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question15summary_social-media-engagement">Yes</label>
                                                 </div>
                                             </div>
                                             <div class="form-group input-field">
                                                 <h5>Would you like us to manage your digital advertising? (10% of media spend)
                                                 </h5>
-                                                <input type="text" class="form-control" id="digital-advertising"
-                                                    placeholder="Enter your media budget">
+                                                <input type="text" class="form-control" id="question16summary_digital-advertising"
+                                                    placeholder="Enter your media budget" onfocus="generateSummary(this)">
                                             </div>
                                             <div class="form-group">
                                                 <h5>We offer multiple kinds of reports, select the ones you would like?</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="End-to-End"
-                                                        value="End-to-End Website Reporting">
-                                                    <label class="form-check-label" for="End-to-End">End-to-End Website
+                                                    <input class="form-check-input" type="checkbox" id="question17summary_End-to-End"
+                                                        value="End-to-End Website Reporting" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question17summary_End-to-End">End-to-End Website
                                                         Reporting</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="sentiment-reporting"
-                                                        value="Customer Sentiment Reporting">
-                                                    <label class="form-check-label" for="sentiment-reporting">Customer Sentiment
+                                                    <input class="form-check-input" type="checkbox" id="question17summary_sentiment-reporting"
+                                                        value="Customer Sentiment Reporting" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question17summary_sentiment-reporting">Customer Sentiment
                                                         Reporting</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="ad-reporting"
-                                                        value="Ad Reporting">
-                                                    <label class="form-check-label" for="ad-reporting">Ad Reporting</label>
+                                                    <input class="form-check-input" type="checkbox" id="question17summary_ad-reporting"
+                                                        value="Ad Reporting" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question17summary_ad-reporting">Ad Reporting</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="sales-reporting"
-                                                        value="Sales Reporting">
-                                                    <label class="form-check-label" for="sales-reporting">Sales
+                                                    <input class="form-check-input" type="checkbox" id="question17summary_sales-reporting"
+                                                        value="Sales Reporting" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question17summary_sales-reporting">Sales
                                                         Reporting</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="lead-reporting"
-                                                        value="Lead Reporting">
-                                                    <label class="form-check-label" for="lead-reporting">Lead Reporting</label>
+                                                    <input class="form-check-input" type="checkbox" id="question17summary_lead-reporting"
+                                                        value="Lead Reporting" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question17summary_lead-reporting">Lead Reporting</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="content-reporting"
-                                                        value="SEO & Content Reporting">
-                                                    <label class="form-check-label" for="content-reporting">SEO & Content
+                                                    <input class="form-check-input" type="checkbox" id="question17summary_content-reporting"
+                                                        value="SEO & Content Reporting" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question17summary_content-reporting">SEO & Content
                                                         Reporting</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="data-modeling"
-                                                        value="Machine Learning & Data Modeling">
-                                                    <label class="form-check-label" for="data-modeling">Machine Learning & Data
+                                                    <input class="form-check-input" type="checkbox" id="question17summary_data-modeling"
+                                                        value="Machine Learning & Data Modeling" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question17summary_data-modeling">Machine Learning & Data
                                                         Modeling</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="full-package"
-                                                        value="Full Package (Bit of everything)">
-                                                    <label class="form-check-label" for="full-package">Full Package (Bit of
+                                                    <input class="form-check-input" type="checkbox" id="question17summary_full-package"
+                                                        value="Full Package (Bit of everything)" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question17summary_full-package">Full Package (Bit of
                                                         everything)</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Our demand generation services, select the ones you would like?</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="sales-training"
-                                                        value="Sales Training">
-                                                    <label class="form-check-label" for="sales-training">Sales Training</label>
+                                                    <input class="form-check-input" type="checkbox" id="question18summary_sales-training"
+                                                        value="Sales Training" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question18summary_sales-training">Sales Training</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="list-building"
-                                                        value="List Building">
-                                                    <label class="form-check-label" for="list-building">List Building</label>
+                                                    <input class="form-check-input" type="checkbox" id="question18summary_list-building"
+                                                        value="List Building" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question18summary_list-building">List Building</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="data-extraction"
-                                                        value="Data Extraction and Scraping">
-                                                    <label class="form-check-label" for="data-extraction">Data Extraction and
+                                                    <input class="form-check-input" type="checkbox" id="question18summary_data-extraction"
+                                                        value="Data Extraction and Scraping" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question18summary_data-extraction">Data Extraction and
                                                         Scraping</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="cold-calling"
-                                                        value="Cold Calling 2.0">
-                                                    <label class="form-check-label" for="cold-calling">Cold Calling 2.0</label>
+                                                    <input class="form-check-input" type="checkbox" id="question18summary_cold-calling"
+                                                        value="Cold Calling 2.0" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question18summary_cold-calling">Cold Calling 2.0</label>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <h5>Our business strategy services, select the ones you would like?</h5>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="business-consulting"
-                                                        value="Business Consulting">
-                                                    <label class="form-check-label" for="business-consulting">Business
+                                                    <input class="form-check-input" type="checkbox" id="question19summary_business-consulting"
+                                                        value="Business Consulting" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question19summary_business-consulting">Business
                                                         Consulting</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="marketing-finance"
-                                                        value="Marketing Finance">
-                                                    <label class="form-check-label" for="marketing-finance">Marketing
+                                                    <input class="form-check-input" type="checkbox" id="question19summary_marketing-finance"
+                                                        value="Marketing Finance" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question19summary_marketing-finance">Marketing
                                                         Finance</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="market-research"
-                                                        value="Market Research">
-                                                    <label class="form-check-label" for="market-research">Market
+                                                    <input class="form-check-input" type="checkbox" id="question19summary_market-research"
+                                                        value="Market Research" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question19summary_market-research">Market
                                                         Research</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="growth-plan"
-                                                        value="Growth Plan">
-                                                    <label class="form-check-label" for="growth-plan">Growth Plan</label>
+                                                    <input class="form-check-input" type="checkbox" id="question19summary_growth-plan"
+                                                        value="Growth Plan" onchange="generateSummary(this)">
+                                                    <label class="form-check-label" for="question19summary_growth-plan">Growth Plan</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -643,29 +607,11 @@
                                     <div class="col-12 col-md-4">
                                         <div class="summary-box">
                                             <h2>Summary</h2>
-                                            <ul class="summary-list">
-                                                <li>Yes <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>Enter your media budget <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>End-to-End Website Reporting <span class="close-icon"></span></li>
-                                                <li>Customer Sentiment Reporting <span class="close-icon"></span></li>
-                                                <li>SEO & Content Reporting <span class="close-icon"></span></li>
-                                                <li>Machine Learning & Data Modeling <span class="close-icon"></span></li>
-                                                <li>Full Package (Bit of everything) <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>Sales Training <span class="close-icon"></span></li>
-                                                <li>Data Extraction and Scraping <span class="close-icon"></span></li>
-                                                <li>Cold Calling 2.0 <span class="close-icon"></span></li>
-                                            </ul>
-                                            <ul class="summary-list">
-                                                <li>Business Consulting <span class="close-icon"></span></li>
-                                                <li>Marketing Finance <span class="close-icon"></span></li>
-                                                <li>Growth Plan <span class="close-icon"></span></li>
-                                            </ul>
+                                            <ul class="summary-list" id="question15summary"></ul>
+                                            <ul class="summary-list" id="question16summary"></ul>
+                                            <ul class="summary-list" id="question17summary"></ul>
+                                            <ul class="summary-list" id="question18summary"></ul>
+                                            <ul class="summary-list" id="question19summary"></ul>
                                         </div>
                                     </div>
                                 </div>
@@ -728,7 +674,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="row contact-team-row">
-                                    <div class="col-md-6 col-12">
+                                    <div class="col-lg-6 col-12">
                                         <p class="contact-note">Please note: above prices are purely estimates. If you
                                             would like to get a
                                             better
@@ -750,7 +696,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-12">
+                                    <div class="col-lg-6 col-12">
                                         <form id="result-form" class="result-form">
                                             <div class="form-group">
                                                 <input type="text" class="form-control" name="fname"
@@ -860,6 +806,7 @@
     <script type="text/javascript" src="assets/js/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/summary-generator.js"></script>
     <script type="text/javascript" src="assets/js/slick.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>

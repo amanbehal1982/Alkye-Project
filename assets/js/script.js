@@ -39,5 +39,8 @@ $(document).ready(function(){
         event.preventDefault();
         $('#regForm').hide();
         $('.result-area').show();
-    })
+    });
+    $('.summary-box h2').click(function(){
+        $(this).toggleClass('active-box').siblings('.summary-box ul.summary-list').toggle();
+    });
 });

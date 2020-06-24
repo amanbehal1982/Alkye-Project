@@ -42,7 +42,7 @@
 
             _.defaults = {
                 accessibility: true,
-                adaptiveHeight: false,
+                adaptiveHeight: true,
                 appendArrows: $(element),
                 appendDots: $(element),
                 arrows: true,
@@ -263,7 +263,7 @@
         var animProps = {},
             _ = this;
 
-        _.animateHeight();
+        /* _.animateHeight(); */
 
         if (_.options.rtl === true && _.options.vertical === false) {
             targetLeft = -targetLeft;
@@ -1971,7 +1971,7 @@
             } else {
                 _.postSlide(animSlide);
             }
-            _.animateHeight();
+            /* _.animateHeight(); */
             return;
         }
 
